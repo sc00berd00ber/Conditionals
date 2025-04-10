@@ -26,7 +26,22 @@ public class Main {
         }
     }
 
+    public static void blackJack(int total) {
+        if (total < 15){
+            System.out.println("Hit");
+        } else if (total == 21) {
+            System.out.println("Black Jack");
+        } else{
+            System.out.println("Stand");
+        }
+    }
+
     public static void main(String[] args) {
+        blackJack(13);
+        blackJack(19);
+        blackJack(21);
+
+
         drink(11); // Juice
         drink(25); // Adult Bev
         drink(99); // Tea
